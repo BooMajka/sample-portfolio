@@ -74,7 +74,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--nav-color);
+    background-color: #92cccd8a;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -165,6 +165,9 @@ margin-left: 40px;
     color:var(--font-color);
     display: flex;
     align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 [class ^="box-"] span{
     width: 180px;
@@ -176,9 +179,22 @@ margin-left: 40px;
 }
 .box-1 {
     flex: 100%;
+    background-image: url(./img/rustico.png);
 }
 .box-2, .box-3, .box-4, .box-5 {
  flex: 40%;
+}
+.box-2{
+    background-image: url(./img/nutur.png); 
+}
+.box-3 {
+    background-image: url(./img/clock.png);
+}
+.box-4 {
+    background-image: url(./img/bank.png);
+}
+.box-5 {
+    background-image: url(./img/run.jpg);
 }
 
 /* contact */
@@ -204,4 +220,51 @@ margin-left: 40px;
     font-size: 1.4rem;
     font-weight: 100;
     color: var(--font-color);
+}
+
+@media (max-width:890px) {
+    header {
+        height: 200px;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .about-info{
+        flex-direction: column;
+    }
+    .title h2 {
+        margin-left:0;
+        text-align: center;
+    }
+    .title h2::after{
+        display: none;
+    }
+    .about-desc {
+        margin: 0 10px;
+    }
+    .about-desc  p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .container-box{
+        margin: 0 10px;
+    }
+    [class ^="box-"]{
+        flex:100%;
+    }
+    .contact-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-links a{
+        font-size: 0.8rem;
+    }
+
 }
