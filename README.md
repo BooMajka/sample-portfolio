@@ -6,5 +6,5 @@
 * RWD
 
 ## DEMO
-https://silly-lalande-7927e8.netlify.app/
+https://quirky-euclid-9ae236.netlify.app
 
